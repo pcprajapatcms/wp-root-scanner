@@ -37,7 +37,7 @@ class Wp_Root_Scanner_Activator {
 	private static function create_table() {
 		global $wpdb;
 		$charset_collate = $wpdb->get_charset_collate();
-		$table_name      = $wpdb->prefix . 'wp_root_scanner_result'; // Adjust table name accordingly
+		$table_name      = $wpdb->prefix . 'root_scanner_result'; // Adjust table name accordingly
 		$sql             = "CREATE TABLE $table_name (
 			id mediumint(9) NOT NULL AUTO_INCREMENT,
 			type varchar(20) NOT NULL,
